@@ -1,0 +1,235 @@
+.wrap {
+  width: 100%;
+}
+/*헤더부분*/
+.topContainer {
+  width: 100%;
+  height: 120px;
+  position: relative;
+  margin-bottom: 20px;
+  /* background-color: bisque;  */
+}
+
+/* 1.로고부분*/
+.topLogo {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.logo {
+  width: 600px;
+  overflow: hidden; /*자식에서 float속성을 쓰기 위해*/
+}
+.logo > img {
+  width: 100px;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
+}
+.logo > h1 {
+  height: 60px;
+  line-height: 60px;
+  float: left;
+  font-size: 1.5rem;
+  color: rgb(58, 162, 61);
+}
+.topNav {
+  width: 360px;
+  text-align: right;
+}
+.topNav li {
+  display: inline-block;
+}
+.topNav li > a {
+  display: inline-block; /*a태그는 인라인이라 너비,높이를못가져서 인라인블록으로 바꿔줌*/
+  padding: 7px 5px;
+}
+.topNav li > a:hover {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.mainNav {
+  position: absolute;
+  bottom: 0px;
+  left: 150px;
+}
+.mainNav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* background-color: red; */
+}
+.mainNav li > a {
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 1.2rem;
+}
+.mainNav li > a:hover {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}
+/*경계선*/
+hr {
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+
+/*검색부분*/
+.search {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 3px 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+
+.search > form {
+  overflow: hidden;
+}
+.search > form > div {
+  float: left;
+  width: 200px;
+}
+.search > form > div span {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* .search>form>input[type="text"]
+.search>form>input[name="textSearch"] */
+.search > form > input[name="textSearch"] {
+  height: 25px;
+  width: 300px;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+.banner {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.banner > img {
+  width: 100%;
+}
+.courseInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*공간이 부족하면 아래로 배치가능*/
+}
+/* .courseInfo > a {
+  display: inline-block;
+  padding: 2px 3px;
+  margin: 3px 2px;
+} */
+.courseInfo img {
+  box-sizing: border-box;
+  width: 240px;
+}
+/*탭이 있는 부분, 공지사항*/
+.mainInfo {
+  box-sizing: border-box;
+  width: 100%;
+  height: 420px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* 탭 부분 */
+.tabMenu {
+  width: 600px;
+  height: 420px;
+  margin-right: 20px;
+}
+/*탭 제목부분*/
+.tabTitle {
+  height: 49px;
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: #ccc;
+}
+/*탭 제목의 버튼*/
+.tabTitle button {
+  width: 150px;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tabTitle button:hover {
+  background-color: #ddd;
+}
+.tabTitle button.active {
+  background-color: #ccc;
+}
+.tabPage {
+  box-sizing: border-box;
+  height: 369px;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tablinkInit {
+  display: block;
+}
+
+/*책 이미지 부분, 책소개*/
+.bookInfo > img {
+  box-sizing: border-box;
+  width: 340px;
+  height: 369px;
+  /* vertical-align: baseline; */
+  margin-top: 50px;
+}
+
+/* footer 부분 */
+.footer {
+  width: 100%;
+  height: 200px;
+}
+.companyInfo {
+  box-sizing: border-box;
+  width: 100%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+}
+.companyInfo > ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 20px;
+}
+.companyInfo li > a:hover {
+  color: red;
+}
+.symbols {
+  margin-left: 18px;
+}
+.companyAddress > span {
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  font-size: 12px;
+}

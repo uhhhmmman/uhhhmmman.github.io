@@ -1,0 +1,69 @@
+html,
+body,
+head,
+div,
+span,
+p,
+header,
+nav,
+section,
+article,
+aside,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ol,
+ul,
+li,
+a,
+img,
+iframe,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+form,
+input,
+label,
+button,
+select,
+textarea {
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  width: 960px; /*크기는 12로 나누어 떨어지는 값*/
+  margin: 0px auto; /*위아래0 좌우 가운데정렬*/
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  border: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
